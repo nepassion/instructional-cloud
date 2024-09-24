@@ -20,14 +20,14 @@
 
     <!-- 设置根日志级别和输出目标 -->
     <root level="INFO">
-        <appender-ref ref="STDOUT" />  <!-- 控制台输出 -->
-        <appender-ref ref="FILE" />     <!-- 文件输出 -->
+        <appender-ref ref="STDOUT"/>  <!-- 控制台输出 -->
+        <appender-ref ref="FILEs"/>     <!-- 文件输出 -->
     </root>
 
     <!-- 设置特定包的日志级别 -->
-    <logger name="com.baomidou.mybatisplus" level="DEBUG" />  <!-- MyBatis-Plus SQL 日志 -->
-    <logger name="org.apache.ibatis" level="DEBUG" />        <!-- MyBatis SQL 日志 -->
-    <logger name="org.hibernate.SQL" level="DEBUG" />        <!-- Hibernate SQL 日志 -->
+    <logger name="com.baomidou.mybatisplus" level="DEBUG"/>  <!-- MyBatis-Plus SQL 日志 -->
+    <logger name="org.apache.ibatis" level="DEBUG"/>        <!-- MyBatis SQL 日志 -->
+    <logger name="org.hibernate.SQL" level="DEBUG"/>        <!-- Hibernate SQL 日志 -->
 
     <!-- 如果需要，可以设置更多的包日志级别 -->
 </configuration>
