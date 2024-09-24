@@ -1,7 +1,7 @@
 package org.example.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.example.entity.User;
+import org.example.dao.entity.User;
 
 /**
  * (User)表服务接口
