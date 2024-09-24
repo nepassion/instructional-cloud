@@ -2,7 +2,7 @@ package org.example.dao.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
-import org.example.entity.User;
+import org.example.dao.entity.User;
 
 /**
  * (User)表数据库访问层
