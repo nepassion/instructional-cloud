@@ -22,9 +22,18 @@ mybatis-plus:
   type-aliases-package: org.example.dao.*  # 设置实体类别名的包
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 控制台输出 SQL 语句
+    cache-enabled: true #开启二级缓存
+    map-underscore-to-camel-case: true #是否开启下划线和驼峰映射
+    lazy-loading-enabled: true #开启懒加载
+    aggressive-lazy-loading: true #全部属性开启懒加载
+
   global-config:
+    banner: true #开启mybatis logo
     db-config:
-      sql-in-xml: true  # 允许在 XML 中使用 SQL
+      id-type: assign_id #id默认为雪花ID
+      update-strategy: not_null #更新策略,只更新非空字段
+      table-prefix: t_
+
 
 logging:
   level:

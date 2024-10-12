@@ -1,5 +1,7 @@
 package org.example.dao.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import lombok.AllArgsConstructor;
@@ -24,6 +26,7 @@ import java.util.Date;
 @Alias("User")
 public class User extends Model<User> {
 
+    @TableId(type = IdType.ASSIGN_ID)
     private Long id;
 
     private String username;

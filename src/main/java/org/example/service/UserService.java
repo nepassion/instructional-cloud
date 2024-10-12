@@ -11,5 +11,7 @@ import org.example.dao.entity.User;
  */
 public interface UserService extends IService<User> {
 
+
+    int deductionBalance(Long id, Double money);
 }
 
